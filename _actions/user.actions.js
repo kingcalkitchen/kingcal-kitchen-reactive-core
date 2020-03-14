@@ -5,6 +5,7 @@ export const userActions = {
     getToken,
     removeToken,
     restoreToken,
+    register,
 }
 
 function getToken(credentials, setStorage) {
@@ -47,4 +48,26 @@ function restoreToken(token) {
     }
 
     function restoreToken(token) { return { type: userConstants.RESTORE_TOKEN, token } }
+}
+
+function register(user, signIn) {
+
+    return dispatch => {
+
+        userService.register(user)
+            .then(
+                response => {
+                    signIn({ email: user.email, password: user.password })
+                    
+                    dispatch(success())
+                },
+                error => {
+                    dispatch(failure(error.message))
+                }
+            )
+    }
+
+    function request() { return { type: userConstants.CREATE_REQUEST } }
+    function success() { return { type: userConstants.CREATE_SUCCESS } }
+    function failure(error) { return { type: userConstants.CREATE_FAILURE, error } }
 }

@@ -1,8 +1,8 @@
 import { apiURL, handleResponse, handleError } from './../_helpers'
-import { Alert } from 'react-native'
 
 export const userService = {
     getToken,
+    register,
 }
 
 function getToken(credentials) {
@@ -14,5 +14,17 @@ function getToken(credentials) {
     }
 
     return fetch(`${apiURL}/api/User/Authenticate`, requestOptions)
+        .then(handleResponse, handleError)
+}
+
+function register(user) {
+
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(user),
+    }
+
+    return fetch(`${apiURL}/api/User/Register`, requestOptions)
         .then(handleResponse, handleError)
 }

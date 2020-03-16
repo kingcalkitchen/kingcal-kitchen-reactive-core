@@ -5,9 +5,7 @@ export const navigationConstants = {
     HOME: 'Home',
   
     LOCATIONS: 'Locations',
-    KINGCAL_KITCHEN: 'KingCalKitchen',
-    CUTTING_EDGE_NUTRITION: 'CuttingEdgeNutrition',
-    FGN_FITNESS: 'FgnFitness',
+    LOCATION_DETAIL: 'LocationDetail',
   
     MEAM_MENU_HOME: 'MealMenuHome',
     CATEGORIES: 'Categories',

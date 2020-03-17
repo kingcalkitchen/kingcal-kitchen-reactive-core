@@ -1,4 +1,4 @@
-import { apiURL, handleResponse, handleError } from './../_helpers'
+import { apiURL, handleResponse, handleError } from '../_helpers'
 
 export const userService = {
     getToken,

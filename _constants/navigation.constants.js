@@ -7,7 +7,7 @@ export const navigationConstants = {
     LOCATIONS: 'Locations',
     LOCATION_DETAIL: 'LocationDetail',
   
-    MEAM_MENU_HOME: 'MealMenuHome',
+    MENU: 'Menu',
     CATEGORIES: 'Categories',
     INGREDIENT: 'Ingredient',
     INGREDIENTS: 'Ingredients',

@@ -1,7 +1,8 @@
 export const navigationConstants = {
-    SIGN_IN: 'SignIn',
-    SIGN_UP: 'SignUp',
-  
+    FORGOT_PASSWORD: 'ForgotPassword',
+    LOGIN: 'Login',
+    REGISTER: 'Register',
+    
     HOME: 'Home',
   
     LOCATIONS: 'Locations',

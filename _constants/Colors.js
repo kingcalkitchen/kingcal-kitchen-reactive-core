@@ -1,4 +1,4 @@
-const tintColor = '#2f95dc';
+const tintColor = '#2f95dc' 
 
 export const Colors = {
   tintColor,
@@ -11,4 +11,4 @@ export const Colors = {
   warningText: '#666804',
   noticeBackground: tintColor,
   noticeText: '#fff',
-};
+} 

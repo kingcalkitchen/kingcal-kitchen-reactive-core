@@ -12,5 +12,4 @@ export const APP_THEME = {
     primary: BASE_COLORS.primary,
     secondary: BASE_COLORS.secondary,
     error: BASE_COLORS.error,
-    container: CONTAINER_BASE,
 }
